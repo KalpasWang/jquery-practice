@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wrap{
+  width: 960px;
+  margin: 0 auto;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 社群連結，選單 */
+
+.social-link {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-link li {
+  float: left;
+  margin: 7px 0;
+  padding: 0 10px;
+}
+
+.social-link li + li {
+  /* 在社群連結中加入分隔線 */
+  border-left: 1px solid #ccc; 
+}
+
+.social-link a {
+  text-decoration: none;
+}
+
+.social-link a:hover{
+  color: #00cb9b;
+}
+
+.social-link a img {
+  vertical-align: top;
+}
+
+.facebook {
+  color: #4460a4;
+}
+
+.twitter {
+  color: #00b4ed;
+}
+
+.menu h1 {
+  float: left;
+}
+
+.menu h1 a {
+  background-image: url(../images/logo.png);
+  display: block;
+  width: 224px;
+  height: 50px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu > ul {
+  float: right;
+  min-height: 50px;
+}
+
+.menu .menu-item {
+  float: left;
+  margin: 0 20px;
+}
+
+.menu .menu-item > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px 13px;
+  color: #00cb9b;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.menu .menu-item > a:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #00cb9b;
+  transition: transform 0.1s ease-out;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+.menu .menu-item a:hover:after {
+  transform: scaleX(1);
+}
+
+.active {
+  color: #000;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dropdown-menu {
+  display: none;
+  background: #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.dropdown-item a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: #00cb9b;
+}
+
+.dropdown-item a:hover {
+  background: #eee;
+}
